@@ -18,12 +18,30 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test.c">
+    <ClCompile Include="print_game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="update_game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="update_status.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test.h">
+    <ClInclude Include="print_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="update_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="update_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user_input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

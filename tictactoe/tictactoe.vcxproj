@@ -128,10 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
-    <ClCompile Include="test.c" />
+    <ClCompile Include="print_game.c" />
+    <ClCompile Include="update_game.c" />
+    <ClCompile Include="update_status.c" />
+    <ClCompile Include="user_input.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="test.h" />
+    <ClInclude Include="print_game.h" />
+    <ClInclude Include="update_game.h" />
+    <ClInclude Include="update_status.h" />
+    <ClInclude Include="user_input.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
