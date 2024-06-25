@@ -4,5 +4,6 @@ int main() {
 	print_text();
 	print_text();
 	print_text();
+	print_text();
 	return 0;
 }
