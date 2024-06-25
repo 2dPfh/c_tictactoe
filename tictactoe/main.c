@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "print_game.h"
 #include "user_input.h"
 #include "update_game.h"
