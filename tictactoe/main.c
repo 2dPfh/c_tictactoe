@@ -8,12 +8,12 @@
 int main() {
 	int arr[3][3] = { 0, };
 	int game_status = 0; // 0 반복, 1 종료
-	int turn = 1; // turn % 2 로 턴 확인
+	int turn = 2; // turn % 2 로 턴 확인
 	int x, y; // 좌표
 	
 	while (game_status == 0) {
 		int temp = 0; // 입력, 적용 반복 여부
-
+	
 		print_game(arr, turn); // 콘솔에 출력
 		while (temp == 0) {
 			user_input(&x, &y); // 유저 입력
@@ -22,7 +22,12 @@ int main() {
 		turn++;
 		game_status = update_status(arr); // 0 혹은 1 리턴
 	}
-	printf("player%d win", turn % 2);
+
+	if (turn % 2)
+		printf("WINNER : PLAYER 1\n\n");
+	else
+		printf("WINNER : PLAYER 2\n\n");
+
 	system("pause");
 	return 0;
 }
