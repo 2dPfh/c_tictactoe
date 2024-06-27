@@ -18,9 +18,12 @@ void print_game(int arr[3][3], int turn) {
 	printf("PLAYER 1 : X\n");
 	printf("PLAYER 2 : O\n\n");
 
-	printf(" %c | %c | %c \n", int_to_square(arr[0][0]), int_to_square(arr[0][1]), int_to_square(arr[0][2]));
-	printf("---|---|---\n");
-	printf(" %c | %c | %c \n", int_to_square(arr[1][0]), int_to_square(arr[1][1]), int_to_square(arr[1][2]));
-	printf("---|---|---\n");
-	printf(" %c | %c | %c \n\n", int_to_square(arr[2][0]), int_to_square(arr[2][1]), int_to_square(arr[2][2]));
+	printf("    1   2   3\n");
+	printf("   -----------\n");
+	printf("1 | %c | %c | %c |\n", int_to_square(arr[0][0]), int_to_square(arr[0][1]), int_to_square(arr[0][2]));
+	printf("  |---|---|---|\n");
+	printf("2 | %c | %c | %c |\n", int_to_square(arr[1][0]), int_to_square(arr[1][1]), int_to_square(arr[1][2]));
+	printf("  |---|---|---|\n");
+	printf("3 | %c | %c | %c |\n", int_to_square(arr[2][0]), int_to_square(arr[2][1]), int_to_square(arr[2][2]));
+	printf("   -----------\n");
 }
