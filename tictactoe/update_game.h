@@ -1,1 +1,1 @@
-int update_game(int *arr, int *x, int *y, int turn);
+int update_game(int (*arr)[3], int x, int y, int turn);
