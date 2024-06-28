@@ -15,8 +15,9 @@ int main() {
 		int temp = 0; // 입력, 적용 반복 여부
 	
 		print_game(arr, turn); // 콘솔에 출력
+		printf("\n예시\n행-열: 1-2, 2-3\n");
 		while (temp == 0) {
-			user_input(&x, &y); // 유저 입력
+			user_input(&x, &y, turn); // 유저 입력
 			temp = update_game(arr, x, y, turn); // 게임 상태 업데이트; 배치 가능하면 1, 불가능하면 0
 		}
 		turn++;
