@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char int_to_square(int square) { // square에 따라서 문자를 리턴하는 함수
+char int_to_square(int square)
+{ // square에 따라서 문자를 리턴하는 함수
 	switch (square)
 	{
 	case 0:
@@ -13,7 +14,8 @@ char int_to_square(int square) { // square에 따라서 문자를 리턴하는 함수
 	}
 }
 
-void print_game(int arr[3][3], int turn) {
+void print_game(int arr[3][3], int turn)
+{
 	system("cls");
 	printf("PLAYER 1 : X\n");
 	printf("PLAYER 2 : O\n\n");

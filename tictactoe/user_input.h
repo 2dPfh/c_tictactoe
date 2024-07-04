@@ -1,1 +1,1 @@
-void user_input(int *x, int *y);
+void user_input(int *x, int *y, int turn);
