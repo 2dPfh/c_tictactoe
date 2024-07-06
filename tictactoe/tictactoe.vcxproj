@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="intro.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="print_game.c" />
     <ClCompile Include="update_game.c" />
@@ -134,6 +135,7 @@
     <ClCompile Include="user_input.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="intro.h" />
     <ClInclude Include="print_game.h" />
     <ClInclude Include="update_game.h" />
     <ClInclude Include="update_status.h" />

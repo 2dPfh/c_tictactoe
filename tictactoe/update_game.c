@@ -9,7 +9,7 @@ int update_game(int (*arr)[3], int x, int y, int turn)
 	}
 	else
 	{
-		printf("PLAYER %d가 이미 사용한 자리입니다.\n다시 입력해주십시오.\n", turn % 2 + 1);
+		printf("이미 사용한 자리입니다.\n다시 입력해주십시오.\n");
 		return 0;
 	}
 }
