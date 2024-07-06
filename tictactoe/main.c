@@ -30,7 +30,7 @@ int main()
 		game_status = update_status(arr); // 0 혹은 1 리턴
 	}
 
-	if (turn == 11)
+	if (game_status == 0)
 		printf("DRAW");
 	else if (turn % 2)
 		printf("WINNER : PLAYER 1\n\n");
