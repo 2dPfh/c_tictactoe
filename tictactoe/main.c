@@ -32,9 +32,10 @@ int main()
 		turn++;
 		game_status = update_status(arr); // 0 혹은 1 리턴
 	}
+	print_game(arr, turn); // 콘솔에 출력
 
 	if (game_status == 0)
-		printf("DRAW");
+		printf("DRAW\n\n");
 	else if (turn % 2)
 		printf("WINNER : PLAYER 1\n\n");
 	else
