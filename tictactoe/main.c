@@ -8,13 +8,14 @@
 int main()
 {
 	int arr[3][3] = {
+		// 0 빈칸, 1 P1, 2 P2
 		0,
 	};
 	int game_status = 0; // 0 반복, 1 종료
 	int turn = 2;		 // turn % 2 로 턴 확인
 	int x, y;			 // 좌표
 
-	while (game_status == 0)
+	while (game_status == 0 && turn < 11)
 	{
 		int temp = 0; // 입력, 적용 반복 여부
 
@@ -29,7 +30,9 @@ int main()
 		game_status = update_status(arr); // 0 혹은 1 리턴
 	}
 
-	if (turn % 2)
+	if (turn == 11)
+		printf("DRAW");
+	else if (turn % 2)
 		printf("WINNER : PLAYER 1\n\n");
 	else
 		printf("WINNER : PLAYER 2\n\n");
