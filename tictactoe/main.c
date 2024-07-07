@@ -4,7 +4,6 @@
 #include "user_input.h"
 #include "update_game.h"
 #include "update_status.h"
-#include "intro.h"
 
 int main()
 {
@@ -15,8 +14,6 @@ int main()
 	int game_status = 0; // 0 반복, 1 종료
 	int turn = 2;		 // turn % 2 로 턴 확인
 	int x, y;			 // 좌표
-
-	root();              //intro 출력
 
 	while (game_status == 0 && turn < 11)
 	{
